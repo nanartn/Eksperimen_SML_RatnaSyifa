@@ -1,0 +1,1 @@
+Menyimpan dataset mentah
