@@ -18,6 +18,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Test Workflow
+      - name: Install Dependencies
         run: |
-          echo "GitHub Actions berhasil dijalankan!"
+          pip install pandas
+          pip install scikit-learn
+
+      - name: Download Dataset
+        run: |
+          echo "Dataset diunduh manual dari Kaggle"
+
+      - name: Run Preprocessing
+        run: |
+          python preprocessing/automate_RatnaSyifa.py
