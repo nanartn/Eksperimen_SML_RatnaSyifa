@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("creditcard.csv")
+df = pd.read_csv("dataset_raw/creditcard.csv")
 
 df = df.dropna()
 
